@@ -35,4 +35,5 @@ for i in numbers:
     else:
         negative_numbers.append(i)
 print("Positive numbers:", positive_numbers)
-print("Negative numbers:", negative_numbers)  # and add the numbers in positive and negative values later
+print("Negative numbers:", negative_numbers)
+# and add the numbers in positive and negative values later

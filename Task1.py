@@ -1,8 +1,8 @@
 def staff_info():
     staff_list = []
-    count = input("\nEnter a how many staff details u want to enter:")
+    c = int(input("\nEnter a how many staff details u want to enter:"))
     counter = 10000
-    for i in range(count):
+    for i in range(c):
         print(f"\n Enter the staff detail :")
         name = input("Enter a staff name:")
         id = input("Enter a staff id:")
@@ -10,4 +10,11 @@ def staff_info():
         counter += 1
         staff_list.append({"staff name": name, "staff id": id, "staff DOB": DOB, "Requisition ID": counter})
     print("\n Staff Details :")
-    pr
+    for staff in staff_list:
+        print(f"\nStaff Name:", staff.get("staff name"))
+        print(staff.get("staff id"))
+        print(staff.get("staff DOB"))
+        print(staff.get("Requisition ID"))
+
+
+staff_info()

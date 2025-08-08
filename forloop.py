@@ -31,4 +31,4 @@ def d():  # get strat and stop input from the user
         print(i)
 
 
-print(d())
+d()
