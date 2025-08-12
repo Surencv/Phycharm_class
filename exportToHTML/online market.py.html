@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>online market.py</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <style type="text/css">
+        .s0 {
+            color: #7a7e85;
+        }
+
+        .s1 {
+            color: #bcbec4;
+        }
+
+        .s2 {
+            color: #bcbec4;
+        }
+
+        .s3 {
+            color: #6aab73;
+        }
+
+        .s4 {
+            color: #cf8e6d;
+        }
+    </style>
+</head>
+<body bgcolor="#1e1f22">
+<table BGCOLOR="#606060" CELLPADDING=5 CELLSPACING=0 COLS=1 WIDTH="100%">
+    <tr>
+        <td>
+            <center>
+                <font color="#000000" face="Arial, Helvetica">
+                    online market.py</font>
+            </center>
+        </td>
+    </tr>
+</table>
+<pre><span class="s0">#write a example python program on online market to ask a user to do the following,</span>
+<span class="s0"># A. how many items the user he wants to purchase,</span>
+<span class="s0"># B. based on (A) ask the user to enter the name of the item and price and store them in different lists,</span>
+<span class="s0"># C. print out the items in $ price from both lists, format-item, price ex manago:300</span>
+<span class="s0"># then print out the total money spend</span>
+
+<span class="s1">items </span><span class="s2">= []</span>
+<span class="s1">prices </span><span class="s2">= []</span>
+<span class="s1">num_items </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span
+            class="s1">input</span><span class="s2">(</span><span class="s3">&quot;How many items do you want to purchase? &quot;</span><span
+            class="s2">))</span>
+<span class="s4">for </span><span class="s1">i </span><span class="s4">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s1">num_items</span><span class="s2">):</span>
+    <span class="s1">name </span><span class="s2">= </span><span class="s1">input</span><span class="s2">(</span><span
+            class="s3">&quot;Enter name of item: &quot;</span><span class="s2">)</span>
+    <span class="s1">price </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span
+            class="s1">input</span><span class="s2">(</span><span
+            class="s3">&quot;Enter price in dollars): &quot;</span><span class="s2">))</span><span class="s0"># float for .99 or any .000 value or just use int</span>
+    <span class="s1">items</span><span class="s2">.</span><span class="s1">append</span><span class="s2">(</span><span
+            class="s1">name</span><span class="s2">)</span>
+    <span class="s1">prices</span><span class="s2">.</span><span class="s1">append</span><span class="s2">(</span><span
+            class="s1">price</span><span class="s2">)</span>
+<span class="s4">for </span><span class="s1">i </span><span class="s4">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s1">num_items</span><span class="s2">):</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">items</span><span class="s2">[</span><span
+            class="s1">i</span><span class="s2">], </span><span class="s1">prices</span><span class="s2">[</span><span
+            class="s1">i</span><span class="s2">])</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Items purchased:</span><span
+            class="s4">{</span><span class="s1">items</span><span class="s4">}</span><span class="s3">:</span><span
+            class="s4">{</span><span class="s1">prices</span><span class="s4">}</span><span
+            class="s3">&quot;</span><span class="s2">) </span><span class="s0">#print(f&quot;Items purchase:{items[i]}:{prices[i]})</span>
+<span class="s1">total </span><span class="s2">= </span><span class="s1">sum</span><span class="s2">(</span><span
+            class="s1">prices</span><span class="s2">)  </span><span class="s0"># or Total = 0 ,  for price in prices  toatl = price + total</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;total amount purchased:&quot;</span><span
+            class="s2">,</span><span class="s1">total</span><span class="s2">)</span>
+
+
+
+</pre>
+</body>
+</html>

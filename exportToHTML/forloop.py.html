@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>forloop.py</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <style type="text/css">
+        .s0 {
+            color: #cf8e6d;
+        }
+
+        .s1 {
+            color: #bcbec4;
+        }
+
+        .s2 {
+            color: #bcbec4;
+        }
+
+        .s3 {
+            color: #2aacb8;
+        }
+
+        .s4 {
+            color: #6aab73;
+        }
+
+        .s5 {
+            color: #7a7e85;
+        }
+    </style>
+</head>
+<body bgcolor="#1e1f22">
+<table BGCOLOR="#606060" CELLPADDING=5 CELLSPACING=0 COLS=1 WIDTH="100%">
+    <tr>
+        <td>
+            <center>
+                <font color="#000000" face="Arial, Helvetica">
+                    forloop.py</font>
+            </center>
+        </td>
+    </tr>
+</table>
+<pre><span class="s0">def </span><span class="s1">a</span><span class="s2">():</span>
+<span class="s0">for </span><span class="s1">i </span><span class="s0">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s3">1</span><span class="s2">,</span><span class="s3">1001</span><span
+            class="s2">):</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;hello world&quot;</span><span
+            class="s2">,</span><span class="s1">i</span><span class="s2">)     </span><span class="s5">### printing hellow world 1000, where i is the variable range(start,stop): stop value always n-1</span>
+                                <span class="s5"># for i in range(start,stop)</span>
+
+                               <span class="s5"># sum the numbers 0 to 999 ?????</span>
+<span class="s0">def </span><span class="s1">b</span><span class="s2">():</span>
+<span class="s1">sum</span><span class="s2">=</span><span class="s3">0</span>
+<span class="s0">for </span><span class="s1">i </span><span class="s0">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s3">0</span><span class="s2">,</span><span class="s3">1000</span><span
+            class="s2">):</span>
+    <span class="s1">sum </span><span class="s2">= </span><span class="s1">i </span><span class="s2">+ </span><span
+            class="s1">sum</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">sum</span><span class="s2">)</span>
+
+<span class="s0">def </span><span class="s1">C</span><span class="s2">():</span>
+    <span class="s0">for </span><span class="s1">i </span><span class="s0">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s3">2</span><span class="s2">,</span><span class="s3">1000</span><span
+            class="s2">,</span><span class="s3">2</span><span class="s2">): </span><span class="s5">#to print the even number in a range   # for i in range(start,stop,stepor count):</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">i</span><span class="s2">)</span>
+
+<span class="s0">def </span><span class="s1">d</span><span class="s2">():                         </span><span
+            class="s5"># get strat and stop input from the user</span>
+    <span class="s1">start </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span
+            class="s1">input</span><span class="s2">(</span><span
+            class="s4">&quot;Enter your starting number: &quot;</span><span class="s2">))</span>
+    <span class="s1">end </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span
+            class="s1">input</span><span class="s2">(</span><span
+            class="s4">&quot;Enter your ending number: &quot;</span><span class="s2">))</span>
+
+    <span class="s0">for </span><span class="s1">i </span><span class="s0">in </span><span class="s1">range</span><span
+            class="s2">(</span><span class="s1">start</span><span class="s2">, </span><span class="s1">end</span><span
+            class="s2">):</span>
+        <span class="s1">print</span><span class="s2">(</span><span class="s1">i</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s1">d</span><span class="s2">())</span></pre>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Slicing.py</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <style type="text/css">
+        .s0 {
+            color: #5f826b;
+            font-style: italic;
+        }
+
+        .s1 {
+            color: #bcbec4;
+        }
+
+        .s2 {
+            color: #7a7e85;
+        }
+
+        .s3 {
+            color: #6aab73;
+        }
+
+        .s4 {
+            color: #bcbec4;
+        }
+
+        .s5 {
+            color: #2aacb8;
+        }
+
+        .s6 {
+            color: #cf8e6d;
+        }
+    </style>
+</head>
+<body bgcolor="#1e1f22">
+<table BGCOLOR="#606060" CELLPADDING=5 CELLSPACING=0 COLS=1 WIDTH="100%">
+    <tr>
+        <td>
+            <center>
+                <font color="#000000" face="Arial, Helvetica">
+                    Slicing.py</font>
+            </center>
+        </td>
+    </tr>
+</table>
+<pre><span class="s0">''''cars=[&quot;A&quot;,&quot;B&quot;,&quot;c&quot;,&quot;d&quot;]   #slicing an item from this list 
+print(cars[:1]) #only the position 1 was displayed 
+print(cars[1:2])# here only position 1 to 2 which is just 1 will be diplayed'''</span>
+<span class="s2"># deleet and add numbers in a list</span>
+<span class="s2">#create an empty list called scroes and populate it with 20,10,5,10,20</span>
+<span class="s2"># then delete the number 5 and then addd 30 to the list in python</span>
+<span class="s3">'''scores=[] 
+scores.extend([20, 10, 5, 10, 20]) 
+scores.remove(5)  
+scores.append(30) 
+print(scores)'''</span>
+
+<span class="s2"># combining the total for the scores</span>
+
+<span class="s3">'''scores=[] 
+scores.extend([20, 10, 5, 10, 20]) 
+scores.remove(5) 
+scores.append(30) 
+print(scores) 
+total = 0 #- You're initializing a variable called total to hold the sum of all the values. 
+# We start at zero because we haven't added anything yet. 
+for scores in scores: #- This is a loop that goes through each item in the list scroes one by one. On each pass: 
+#The variable score temporarily holds one number from the list. 
+    total = scores + total #- It adds the current score to the running total.or toatl+=scores 
+print(&quot;Total score:&quot;, total) '''</span>
+
+<span class="s2">#numbers[40,-20,60,4,-4,-8] write a python program to separate the +ve and the -ve using</span>
+<span class="s2"># if statement  to create the list either the positive or negative numbers</span>
+<span class="s1">positive_numbers </span><span class="s4">= []</span>
+<span class="s1">negative_numbers </span><span class="s4">= []</span>
+<span class="s1">numbers</span><span class="s4">=[</span><span class="s5">40</span><span class="s4">,-</span><span
+            class="s5">20</span><span class="s4">,</span><span class="s5">60</span><span class="s4">,</span><span
+            class="s5">4</span><span class="s4">,-</span><span class="s5">4</span><span class="s4">,-</span><span
+            class="s5">8</span><span class="s4">]</span>
+<span class="s6">for </span><span class="s1">i </span><span class="s6">in </span><span class="s1">numbers</span><span
+            class="s4">:</span>
+    <span class="s6">if </span><span class="s1">i </span><span class="s4">&gt; </span><span class="s5">0</span><span
+            class="s4">:</span>
+        <span class="s1">positive_numbers</span><span class="s4">.</span><span class="s1">append</span><span class="s4">(</span><span
+            class="s1">i</span><span class="s4">) </span><span class="s2">#.append adds the obj to the list</span>
+    <span class="s6">else</span><span class="s4">:</span>
+        <span class="s1">negative_numbers</span><span class="s4">.</span><span class="s1">append</span><span class="s4">(</span><span
+            class="s1">i</span><span class="s4">)</span>
+<span class="s1">print</span><span class="s4">(</span><span class="s3">&quot;Positive numbers:&quot;</span><span
+            class="s4">, </span><span class="s1">positive_numbers</span><span class="s4">)</span>
+<span class="s1">print</span><span class="s4">(</span><span class="s3">&quot;Negative numbers:&quot;</span><span
+            class="s4">, </span><span class="s1">negative_numbers</span><span class="s4">) </span><span class="s2"># and add the numbers in positive and negative values later</span>
+</pre>
+</body>
+</html>
