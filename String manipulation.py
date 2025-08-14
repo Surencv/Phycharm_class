@@ -12,6 +12,7 @@ print('h' in "hello")
 if "h" not in "hello":
     print("NO h in hello")
 else:
+
     print("h in hello")
 
 # "A"=="A" true or false, != not equals to,
