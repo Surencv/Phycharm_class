@@ -1,37 +1,30 @@
-Requisition Management System & Academic Performance Evaluator
-
- Overview
-This repository contains two Python-based modules:
-
-1. Requisition Management System– Automates staff requisition tracking, approval logic, and statistical reporting.
-2. Academic Performance Evaluator– Calculates total and average marks, assigns grades, and determines pass/fail status.
-
-Each module demonstrates foundational software design principles through structured logic, modular functions, and clear output formatting.
-Design Principles Demonstrated
-
-1.Modularity
-Code is broken into reusable components:
-  - `Requisition` class encapsulates requisition logic.
-  - `respond()` and `display()` methods isolate decision and output behavior.
-  - `calculate_average()` and `assign_grade()` functions separate concerns in the academic module.
-
-2.Encapsulation
-- Requisition attributes (e.g., `staff_id`, `items`, `status`) are bundled within the class.
-- Internal logic like approval reference generation is hidden from external access.
-
-3.Single Responsibility Principle
-- Each function and method performs one clear task:
-  - `respond()` updates status.
-  - `show_statistics()` summarizes requisition data.
-  - `main()` orchestrates input/output without mixing logic.
-    
- 4.Scalability
-- Global counters and lists allow easy extension to persistent storage or database integration.
-- Subject lists and keyword arguments (`**scores`) support flexible input handling.
-
-5.Readability & Maintainability
-- Inline comments clarify each step.
-- Variable names are descriptive (`total_marks`, `average_marks`, `approval_ref`).
-- Output is consistently formatted for user clarity.
-
+ Requisition Management System & Academic Performance Evaluator
+ Project Summary
+This repository showcases two Python-driven modules designed to streamline operational workflows and academic assessments:
+1.	Requisition Management System – Facilitates staff requisition tracking, automates approval decisions, and generates summary statistics.
+2.	Academic Performance Evaluator – Computes total and average scores, assigns academic grades, and determines pass/fail outcomes.
+Both modules reflect core software engineering principles through modular architecture, encapsulated logic, and clean output formatting.
+ Key Design Principles
+1. Modular Architecture
+Each module is structured into independent, reusable components:
+•	The Requisition class encapsulates requisition-related data and behavior.
+•	Methods like respond() and display() handle decision-making and presentation separately.
+•	Academic functions such as calculate_average() and assign_grade() isolate computation from evaluation.
+2. Encapsulation
+•	Attributes like staff_id, items, and status are contained within the requisition class.
+•	Internal mechanisms (e.g., approval reference generation) are abstracted from external access, preserving data integrity.
+3. Single Responsibility Principle
+Every function and method is designed to perform a distinct task:
+•	respond() modifies requisition status.
+•	show_statistics() aggregates and presents requisition metrics.
+•	main() coordinates input/output flow without embedding business logic.
+4. Scalability
+•	Use of global counters and lists allows future integration with databases or persistent storage.
+•	Flexible input handling is achieved through dynamic subject lists and keyword arguments (**scores).
+5. Readability & Maintainability
+•	Descriptive variable names (e.g., total_marks, average_marks, approval_ref) enhance clarity.
+•	Inline comments guide the reader through each logical step.
+•	Output formatting is consistent and user-friendly, supporting intuitive interpretation.
+Git hub link:
+https://github.com/Surencv/Phycharm_class
 
